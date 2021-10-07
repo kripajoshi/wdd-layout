@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory, RouteRecordRaw} from 'vue-router'
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Home from './pages/Home.vue'
 import Pricing from './pages/Pricing.vue'
 import Interns from './pages/Interns.vue'
@@ -9,7 +9,6 @@ import Admin from './pages/Admin.vue'
 const routes: RouteRecordRaw[] = [
     {
         path: '/', component: Home
-    
     },
     {
         path: '/pricing', component: Pricing
@@ -23,13 +22,10 @@ const routes: RouteRecordRaw[] = [
     {
         path: '/admin', component: Admin
     },
-
-
-
 ]
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory('/wdd-layout/'),
     routes,
 })
 
